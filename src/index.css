@@ -1,0 +1,146 @@
+:root {
+    --primary-color-Red: hsl(0, 100%, 74%);
+    --primary-color-Green: hsl(154, 59%, 51%);
+    --Accent-color-Blue: hsl(248, 32%, 49%);
+    --Neutral-Dark-Blue: hsl(249, 10%, 26%);
+    --Neutral-Grayish-Blue: hsl(246, 25%, 77%);
+    --font-family: [Poppins]
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    background: black;
+}
+
+#wrapper {
+    background: url(bg-intro-desktop.png);
+    background-color: var(--primary-color-Red);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    border: solid black;
+    height: 90vh;
+    width: 85%;
+    padding-left: 3em;
+    margin-left: 6em;
+    margin-top: 3em;
+    color: snow;
+    font-family: inherit;
+}
+
+#block {
+    padding-left: 1.5em;
+    padding-top: 1em;
+    float: right;
+    margin-top: 3.5em;
+    margin-left: 9em;
+    width: 360px;
+    border-radius: 0.4em;
+    background-color: snow;
+    height: 70vh;
+}
+
+.text {
+    margin-top: 9em;
+    font-size: 20px;
+    margin-left: 1.5em;
+}
+
+.para2,
+.form6 {
+    color: black;
+}
+
+.form6 {
+    font-size: 1em;
+}
+
+.para2 {
+    border: solid;
+    background-color: var(--Accent-color-Blue);
+    color: white;
+    border-radius: 0.5rem;
+    padding-left: 0.4em;
+    padding-top: 0.5em;
+    margin-right: 1.3em;
+    height: 7vh;
+    text-align: center;
+}
+
+form>div {
+    padding-top: 0.7em;
+    width: 300px;
+    ;
+}
+
+.form-control input {
+    width: 320px;
+    height: 6.5vh;
+    border-radius: 0.4em;
+    display: inline-block;
+}
+
+.form button {
+    background-color: green;
+    border-radius: 0.4em;
+    font-family: inherit;
+    width: 320px;
+    height: 6vh;
+}
+
+h6 {
+    width: 320px;
+    height: 4vh;
+}
+
+b {
+    color: red;
+}
+
+.form-control {
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    z-index: 1;
+    bottom: 3%;
+    right: 0;
+    visibility: hidden;
+}
+
+small {
+    float: right;
+    margin-bottom: 1em;
+    color: rgb(212, 10, 10);
+    visibility: hidden;
+}
+
+.form-control.error input {
+    border-color: rgb(212, 10, 10);
+}
+
+.form-control.error small {
+    color: rgb(212, 10, 10);
+    visibility: visible;
+}
+
+.form-control.error svg {
+    color: rgb(212, 10, 10);
+    visibility: visible;
+}
+
+@media screen and (max-width: 760px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
